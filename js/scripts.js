@@ -8,11 +8,14 @@ $(document).ready(function() {
     var numbersCounted = [];
 
     for (var i = 0; i <= countTo; i += countBy) {
-      numbersCounted.push(i);
+      numbersCounted.push(i + ", ");
     }
 
-    $("#output").after(numbersCounted);
-    $(".result").show();
+
+
+    $("#output").empty();
+    $("#output").append(numbersCounted);
+    $("#output").show();
 
   });
 });
